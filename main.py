@@ -20,6 +20,7 @@ import os, sys
 # Third party libraries path must be fixed before importing webapp2
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'boilerplate/external'))
 
+
 import webapp2
 
 import routes
@@ -40,5 +41,4 @@ for status_int in app.config['error_templates']:
 routes.add_routes(app)
 boilerplate_routes.add_routes(app)
 admin_routes.add_routes(app)
-
 

@@ -8,8 +8,13 @@
 
     Routes are setup in routes.py and added in main.py
 """
+
+import webapp2
 import httpagentparser
-from boilerplate import models
+# from boilerplate import models
+from models import categories as categories
+from models import models0
+from models import models1
 from boilerplate.lib.basehandler import BaseHandler
 from boilerplate.lib.basehandler import user_required
 
