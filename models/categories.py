@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Specifies product category information for the app.  In this sample, there
+"""Specifies item category information for the app.  In this sample, there
 are two categories: books, and televisions.
 """
 from google.appengine.api import search
@@ -25,9 +25,9 @@ books = {'name': 'books', 'children': []}
 
 ctree =  {'name': 'root', 'children': [books, televisions]}
 
-# [The core fields that all products share are: item id, name, description,
+# [The core fields that all items share are: item id, name, description,
 # category, category name, and estimatedvalue]
-# Define the non-'core' (differing) product fields for each category
+# Define the non-'core' (differing) item fields for each category
 # above, and their types.
 item_dict =  {'hd televisions': {'size': search.NumberField,
                                  'brand': search.TextField,
