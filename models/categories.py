@@ -23,18 +23,18 @@ from google.appengine.api import search
 televisions = {'name': 'hd televisions', 'children': []}
 books = {'name': 'books', 'children': []}
 
-ctree =  {'name': 'root', 'children': [books, televisions]}
+ctree = {'name': 'root', 'children': [books, televisions]}
 
 # [The core fields that all items share are: item id, name, description,
 # category, category name, and estimatedvalue]
 # Define the non-'core' (differing) item fields for each category
 # above, and their types.
-item_dict =  {'hd televisions': {'size': search.NumberField,
-                                 'brand': search.TextField,
-                                 'tv_type': search.TextField},
-                 'books': {'publisher': search.TextField,
-                           'pages': search.NumberField,
-                           'author': search.TextField,
-                           'title': search.TextField,
-                           'isbn': search.TextField}
-                }
+item_dict = {'hd televisions': {'size': search.NumberField,
+                                'brand': search.TextField,
+                                'tv_type': search.TextField},
+             'books': {'publisher': search.TextField,
+                       'pages': search.NumberField,
+                       'author': search.TextField,
+                       'title': search.TextField,
+                       'isbn': search.TextField}
+            }

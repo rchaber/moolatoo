@@ -4,7 +4,7 @@ config = {
 'environment': "production",
 
 # webapp2 sessions
-'webapp2_extras.sessions' : {'secret_key': 'gs5tJE$5n6jsfrg'},
+'webapp2_extras.sessions' : {'secret_key': 'Rgs5tJE$5n6jsfrg'},
 
 # webapp2 authentication
 'webapp2_extras.auth' : {'user_model': 'boilerplate.models.User',
@@ -34,7 +34,7 @@ config = {
 'contact_recipient' : "PUT_RECIPIENT_EMAIL_HERE",
 
 # Password AES Encryption Parameters
-'aes_key' : "8IGhtRH65gy6",
+'aes_key' : "7JiH8IGhtRH65gy6",
 'salt' : "4gTd6",
 
 # get your own consumer key and consumer secret by registering at https://dev.twitter.com/apps
